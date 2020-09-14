@@ -48,13 +48,13 @@
 .simulador__p {
     font-family: $fuente;
     color: $grisClaro;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
     margin-top: 30px;
 }
 
 .simulador__p--resultado {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .simulador__h4--resultado {
@@ -65,7 +65,7 @@
 }
 
 .simulador__p--resultado--comision {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-bottom: 0px;
 }
 
@@ -90,4 +90,142 @@
     font-size: 0.8rem;
     font-weight: bold;
     margin-top: 20px;
+}
+
+/* MEDIA QUERIES */
+
+/* IPAD */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .simulador__h3 {
+        font-family: $fuente;
+        color: $violetaOscuro;
+        font-weight: bold;
+        font-size: 1.6rem;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .simulador__col3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .simulador__p--resultado {
+        font-size: 1rem;
+    }
+    
+    .simulador__h4--resultado {
+        font-size: 2.2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    
+    .simulador__p--resultado--comision {
+        font-size: 1rem;
+        margin-bottom: 0px;
+    }
+
+    .simulador__col4 {
+        margin-top: 30px;
+    }
+}
+
+/* COMPUTADORA CHICA */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .simulador__h3 {
+        font-family: $fuente;
+        color: $violetaOscuro;
+        font-weight: bold;
+        font-size: 1.6rem;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .simulador__col3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .simulador__p--resultado {
+        font-size: 1rem;
+    }
+    
+    .simulador__h4--resultado {
+        font-size: 2.2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    
+    .simulador__p--resultado--comision {
+        font-size: 1rem;
+        margin-bottom: 0px;
+    }
+
+    .simulador__col4 {
+        margin-top: 30px;
+    }
+
+    .simulador__p {
+        font-family: $fuente;
+        color: $grisClaro;
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 30px;
+    } 
+}
+
+/* COMPUTADORA GRANDE */
+
+@media (min-width: 1200px) {
+    .simulador__h3 {
+        font-family: $fuente;
+        color: $violetaOscuro;
+        font-weight: bold;
+        font-size: 1.6rem;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .simulador__col3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .simulador__p--resultado {
+        font-size: 1rem;
+    }
+    
+    .simulador__h4--resultado {
+        font-size: 2.2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    
+    .simulador__p--resultado--comision {
+        font-size: 1rem;
+        margin-bottom: 0px;
+    }
+
+    .simulador__col4 {
+        margin-top: 30px;
+    }
+
+    .simulador__p {
+        font-family: $fuente;
+        color: $grisClaro;
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 30px;
+    } 
 }

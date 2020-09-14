@@ -98,6 +98,88 @@ body {
 .nav-link:hover {
   font-weight: bold; }
 
+/* MEDIA QUERIES */
+/* IPAD */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero__container {
+    padding-top: 0px; }
+  .hero__col2 {
+    margin-left: 50px; }
+  .hero__h1 {
+    font-family: "Montserrat", sans-serif;
+    color: #6A7686;
+    font-size: 1.2rem;
+    text-align: center; }
+  .hero__h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #343447;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 20px; }
+  .hero__row {
+    padding-bottom: 100px; } }
+
+/* COMPUTADORA CHICA */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .hero__container {
+    padding-top: 0px; }
+  .hero__col2 {
+    margin-left: 50px; }
+  .hero__h1 {
+    font-family: "Montserrat", sans-serif;
+    color: #6A7686;
+    font-size: 1.4rem;
+    text-align: center; }
+  .hero__h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #343447;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px; }
+  .nav-item {
+    padding-top: 0px; }
+  .hero__row {
+    padding-bottom: 100px; }
+  .hero__phone {
+    height: 350px;
+    width: auto;
+    margin-top: 50px;
+    margin-bottom: 75px; }
+  .nav-link {
+    border: none; } }
+
+/* COMPUTADORA GRANDE */
+@media (min-width: 1200px) {
+  .hero__container {
+    padding-top: 0px; }
+  .hero__col2 {
+    margin-left: 50px; }
+  .hero__h1 {
+    font-family: "Montserrat", sans-serif;
+    color: #6A7686;
+    font-size: 1.4rem;
+    text-align: center; }
+  .hero__h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #343447;
+    font-weight: bold;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-top: 20px; }
+  .nav-item {
+    padding-top: 0px; }
+  .hero__row {
+    padding-bottom: 80px; }
+  .hero__phone {
+    height: 450px;
+    width: auto;
+    margin-top: 50px;
+    margin-bottom: 75px; }
+  .nav-link {
+    border: none; } }
+
 /* COLORES */
 /* FUENTE */
 body {
@@ -176,12 +258,12 @@ body {
 .simulador__p {
   font-family: "Montserrat", sans-serif;
   color: #6A7686;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: center;
   margin-top: 30px; }
 
 .simulador__p--resultado {
-  font-size: 0.8rem; }
+  font-size: 1rem; }
 
 .simulador__h4--resultado {
   font-size: 1.6rem;
@@ -190,7 +272,7 @@ body {
   margin-top: 10px; }
 
 .simulador__p--resultado--comision {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-bottom: 0px; }
 
 /* INPUT */
@@ -211,6 +293,100 @@ body {
   font-size: 0.8rem;
   font-weight: bold;
   margin-top: 20px; }
+
+/* MEDIA QUERIES */
+/* IPAD */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .simulador__h3 {
+    font-family: "Montserrat", sans-serif;
+    color: #343447;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  .simulador__col3 {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .simulador__p--resultado {
+    font-size: 1rem; }
+  .simulador__h4--resultado {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 10px; }
+  .simulador__p--resultado--comision {
+    font-size: 1rem;
+    margin-bottom: 0px; }
+  .simulador__col4 {
+    margin-top: 30px; } }
+
+/* COMPUTADORA CHICA */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .simulador__h3 {
+    font-family: "Montserrat", sans-serif;
+    color: #343447;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  .simulador__col3 {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .simulador__p--resultado {
+    font-size: 1rem; }
+  .simulador__h4--resultado {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 10px; }
+  .simulador__p--resultado--comision {
+    font-size: 1rem;
+    margin-bottom: 0px; }
+  .simulador__col4 {
+    margin-top: 30px; }
+  .simulador__p {
+    font-family: "Montserrat", sans-serif;
+    color: #6A7686;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 30px; } }
+
+/* COMPUTADORA GRANDE */
+@media (min-width: 1200px) {
+  .simulador__h3 {
+    font-family: "Montserrat", sans-serif;
+    color: #343447;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  .simulador__col3 {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .simulador__p--resultado {
+    font-size: 1rem; }
+  .simulador__h4--resultado {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 10px; }
+  .simulador__p--resultado--comision {
+    font-size: 1rem;
+    margin-bottom: 0px; }
+  .simulador__col4 {
+    margin-top: 30px; }
+  .simulador__p {
+    font-family: "Montserrat", sans-serif;
+    color: #6A7686;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 30px; } }
 
 /* COLORES */
 /* FUENTE */
@@ -247,15 +423,36 @@ body {
   border-radius: 100px;
   box-shadow: none;
   border: 1px solid gray;
-  outline: none; }
+  outline: none;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: "Montserrat", sans-serif;
+  color: #6A7686;
+  font-size: 0.9rem; }
+
+.contacto__input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #6A7686;
+  font-size: 0.8rem; }
 
 .contacto__textarea {
   width: 100%;
   margin-bottom: 10px;
   border-radius: 15px;
   box-shadow: none;
-  border: 0.5px solid gray;
-  outline: none; }
+  border: 1px solid gray;
+  outline: none;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: #6A7686;
+  font-size: 0.9rem; }
+
+.contacto__textarea::placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #6A7686;
+  font-size: 0.8rem; }
 
 /* BOTONES */
 .contacto__btn {
@@ -288,3 +485,6 @@ body {
   text-align: center;
   font-weight: bold;
   letter-spacing: 1px; }
+
+html {
+  scroll-behavior: smooth; }

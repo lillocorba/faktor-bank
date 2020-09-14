@@ -38,6 +38,18 @@
     box-shadow: none;
     border: 1px solid gray;
     outline: none;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: $fuente;
+    color: $grisClaro;
+    font-size: 0.9rem;
+}
+
+.contacto__input::placeholder {
+    font-family: $fuente;
+    color: $grisClaro;
+    font-size: 0.8rem;
 }
 
 .contacto__textarea {
@@ -45,8 +57,19 @@
     margin-bottom: 10px;
     border-radius: 15px;
     box-shadow: none;
-    border: 0.5px solid gray;
+    border: 1px solid gray;
     outline: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: $fuente;
+    color: $grisClaro;
+    font-size: 0.9rem;
+}
+
+.contacto__textarea::placeholder {
+    font-family: $fuente;
+    color: $grisClaro;
+    font-size: 0.8rem;
 }
 
 /* BOTONES */

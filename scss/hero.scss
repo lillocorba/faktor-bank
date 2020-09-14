@@ -110,3 +110,131 @@
 .nav-link:hover {
     font-weight: bold;
 }
+
+/* MEDIA QUERIES */
+
+/* IPAD */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .hero__container {
+        padding-top: 0px;
+    }
+
+    .hero__col2 {
+        margin-left: 50px;
+    }
+
+    .hero__h1 {
+        font-family: $fuente;
+        color: $grisClaro;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .hero__h2 {
+        font-family: $fuente;
+        color: $violetaOscuro;
+        font-weight: bold;
+        font-size: 1.8rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .hero__row {
+        padding-bottom: 100px;
+    }
+}
+
+/* COMPUTADORA CHICA */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .hero__container {
+        padding-top: 0px;
+    }
+
+    .hero__col2 {
+        margin-left: 50px;
+    }
+
+    .hero__h1 {
+        font-family: $fuente;
+        color: $grisClaro;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    
+    .hero__h2 {
+        font-family: $fuente;
+        color: $violetaOscuro;
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .nav-item {
+        padding-top: 0px;
+    }
+
+    .hero__row {
+        padding-bottom: 100px;
+    }
+
+    .hero__phone {
+        height: 350px;
+        width: auto;
+        margin-top: 50px;
+        margin-bottom: 75px;
+    }
+    
+    .nav-link {
+        border: none;
+    }
+}
+
+/* COMPUTADORA GRANDE */
+
+@media (min-width: 1200px) {
+    .hero__container {
+        padding-top: 0px;
+    }
+
+    .hero__col2 {
+        margin-left: 50px;
+    }
+
+    .hero__h1 {
+        font-family: $fuente;
+        color: $grisClaro;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    
+    .hero__h2 {
+        font-family: $fuente;
+        color: $violetaOscuro;
+        font-weight: bold;
+        font-size: 2.4rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .nav-item {
+        padding-top: 0px;
+    }
+
+    .hero__row {
+        padding-bottom: 80px;
+    }
+
+    .hero__phone {
+        height: 450px;
+        width: auto;
+        margin-top: 50px;
+        margin-bottom: 75px;
+    }
+
+    .nav-link {
+        border: none;
+    }
+}
