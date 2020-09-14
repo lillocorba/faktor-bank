@@ -1,0 +1,93 @@
+@import "variables.scss";
+
+/* CONTENEDORES */
+
+.simulador {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.simulador__col2 {
+    text-align: center;
+}
+
+.simulador__col3 {
+    background-color: $violetaClaro;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: white;
+    font-family: $fuente;
+}
+
+.simulador__col4 {
+    display: flex;
+    justify-content: center;
+}
+
+/* TEXTO */
+
+.simulador__h4 {
+    font-family: $fuente;
+    color: $grisClaro;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.simulador__h3 {
+    font-family: $fuente;
+    color: $violetaOscuro;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.simulador__p {
+    font-family: $fuente;
+    color: $grisClaro;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.simulador__p--resultado {
+    font-size: 0.8rem;
+}
+
+.simulador__h4--resultado {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.simulador__p--resultado--comision {
+    font-size: 0.8rem;
+    margin-bottom: 0px;
+}
+
+/* INPUT */
+
+.simulador__input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+/* BUTTON */
+
+.simulador__btn {
+    background-color: $violetaClaro;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    border-radius: 100px;
+    color: white;
+    font-family: $fuente;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 20px;
+}

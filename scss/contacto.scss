@@ -1,0 +1,64 @@
+@import "variables.scss";
+
+/* CONTENEDORES */
+
+.contacto {
+    padding-bottom: 100px;
+}
+
+.contacto__col {
+    text-align: center;
+}
+
+/* TEXTO */
+
+.contacto__h4 {
+    font-family: $fuente;
+    color: $grisClaro;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.contacto__h3 {
+    font-family: $fuente;
+    color: $violetaOscuro;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* FORM */
+
+.contacto__input {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    box-shadow: none;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.contacto__textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: none;
+    border: 0.5px solid gray;
+    outline: none;
+}
+
+/* BOTONES */
+
+.contacto__btn {
+    background-color: $violetaClaro;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    border-radius: 100px;
+    color: white;
+    font-family: $fuente;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 20px;
+}

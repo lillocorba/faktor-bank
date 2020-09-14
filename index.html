@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faktor Bank</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Hero -->
+
+    <div class="container-fluid hero" id="home">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">Faktor Bank</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#prestamos">Préstamos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container hero__container">
+            <div class="row justify-align-center align-content-center">
+                <div class="col-sm-12 col-md-5 col-lg-5">
+                    <h1 class="hero__h1">FAKTOR BANK</h1>
+                    <H2 class="hero__h2">Tu préstamo,
+                        de forma digital.</H2>
+                    <div class="hero__div__btn">
+                        <button class="hero__btn">Calculá tu cuota</button>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-5 col-lg-5">
+                    <img src="imagenes/hero-phone.png" alt="faktorBank" class="hero__phone">
+                </div>
+            </div>
+        </div>
+        <img src="imagenes/down-arrows.png" alt="" class="hero__arrows">
+    </div>
+
+    <!-- About Section -->
+
+    <div class="container-fluid nosotros" id="nosotros">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-sm-12 col-md-12 col-lg-12 nosotros__col">
+                    <h4 class="nosotros__h4">Nosotros</h4>
+                    <h3 class="nosotros__h3">Somos el primer banco del país
+                        en otorgar préstamos 100% digitales.</h3>
+                    <p class="nosotros__p">Nuestra misión es brindarle al cliente un sistema simple y seguro al
+                        acceder a un préstamo personal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simulator Section -->
+
+    <div class="container-fluid simulador" id="prestamos">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <h4 class="simulador__h4">Simulador</h4>
+                    <h3 class="simulador__h3">Conoce la cuota mensual de
+                        tu préstamo personal.</h3>
+                </div>
+                <div class="col-sm-12 col-md-5 col-lg-5 simulador__col2">
+                    <div>
+                        <p class="simulador__p">¿Cuánto dinero necesitas?</p>
+                        <input type="range" min="1" max="100" value="50" class="simulador__range" id="">
+                        <input type="" name="" id="" class="simulador__input">
+                    </div>
+                    <div>
+                        <p class="simulador__p">¿En cuántos meses querés devolverlo?</p>
+                        <input type="range" min="1" max="100" value="50" class="simulador__range" id="">
+                        <input type="" name="" id="" class="simulador__input">
+                    </div>
+                    <div>
+                        <p class="simulador__p">¿Sos cliente de Faktor Bank?</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-5 col-lg-5 simulador__col3">
+                    <div>
+                        <p class="simulador__p--resultado">Tu cuota mensual:</p>
+                        <h4 class="simulador__h4--resultado">$1159</h4>
+                        <p class="simulador__p--resultado--comision">Comisión: $1338</p>
+                        <p class="simulador__p--resultado">Intereses: 20%</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 simulador__col4">
+                    <button class="simulador__btn">Solicitar Préstamo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+
+    <div class="container-fluid contacto" id="contacto">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 contacto__col">
+                    <h4 class="contacto__h4">¿Alguna duda?</h4>
+                    <h3 class="contacto__h3">Realiza tu consulta y te
+                        Responderemos a la brevedad.</h3>
+                    <form action="">
+                        <fieldset>
+                            <input type="text" name="nombre" id="" class="contacto__input">
+                        </fieldset>
+                        <fieldset>
+                            <input type="text" name="email" id="" class="contacto__input">
+                        </fieldset>
+                        <fieldset>
+                            <textarea name="mensaje" id="" cols="30" rows="10" class="contacto__textarea"></textarea>
+                        </fieldset>
+                        <button class="contacto__btn">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+
+    <div class="container-fluid footer">
+        <div class="container">
+            <div class="row justify-content-center align-content-center">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <p class="footer__p">Desarrollada por Agustin Corbalan</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
