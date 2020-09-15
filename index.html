@@ -58,7 +58,7 @@
                 </div>
             </div>
         </div>
-        <img src="imagenes/down-arrows.png" alt="" class="hero__arrows">
+        <a href="#nosotros"><img src="imagenes/down-arrows.png" alt="" class="hero__arrows"></a>
     </div>
 
     <!-- About Section -->
@@ -90,13 +90,17 @@
                 <div class="col-sm-12 col-md-5 col-lg-5 simulador__col2">
                     <div>
                         <p class="simulador__p">¿Cuánto dinero necesitas?</p>
-                        <input type="range" min="1" max="100" value="50" class="simulador__range" id="rangeInput" oninput="amount.value=rangeInput.value">
-                        <input type="text" value="50" name="" id="amount" class="simulador__input" oninput="rangeInput.value=amount.value">
+                        <input type="range" min="1000" max="100000" value="5000" class="simulador__range"
+                            id="rangeInput" oninput="amount.value=rangeInput.value">
+                        <input type="text" value="5000" name="" id="amount" class="simulador__input"
+                            oninput="rangeInput.value=amount.value">
                     </div>
                     <div>
                         <p class="simulador__p">¿En cuántos meses querés devolverlo?</p>
-                        <input type="range" min="1" max="72" value="12" class="simulador__range" id="rangeInput2" oninput="meses.value=rangeInput2.value">
-                        <input type="" name="" value="12" id="meses" class="simulador__input" oninput="rangeInput2.value=meses.value">
+                        <input type="range" min="1" max="72" value="12" class="simulador__range" id="rangeInput2"
+                            oninput="meses.value=rangeInput2.value">
+                        <input type="" name="" value="12" id="meses" class="simulador__input"
+                            oninput="rangeInput2.value=meses.value">
                     </div>
                     <div>
                         <p class="simulador__p">¿Sos cliente de Faktor Bank?</p>
@@ -132,13 +136,13 @@
                         <br> responderemos a la brevedad.</h3>
                     <form action="">
                         <fieldset>
-                            <input type="text" name="nombre" placeholder="Nombre" id="" class="contacto__input">
+                            <input type="text" name="nombre" placeholder="Nombre" class="contacto__input">
                         </fieldset>
                         <fieldset>
-                            <input type="text" name="email" placeholder="Email" id="" class="contacto__input">
+                            <input type="text" name="email" placeholder="Email" class="contacto__input">
                         </fieldset>
                         <fieldset>
-                            <textarea name="mensaje" placeholder="Mensaje" id="" cols="30" rows="10"
+                            <textarea name="mensaje" placeholder="Mensaje" cols="30" rows="10"
                                 class="contacto__textarea"></textarea>
                         </fieldset>
                         <button class="contacto__btn">Enviar</button>

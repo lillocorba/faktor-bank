@@ -50,7 +50,7 @@ body {
   border-radius: 100px;
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-top: 20px; }
 
@@ -65,7 +65,8 @@ body {
   position: absolute;
   bottom: 20px;
   right: 50%;
-  left: 50%; }
+  left: 50%;
+  cursor: pointer; }
 
 /* MENU */
 .navbar-brand {
@@ -426,7 +427,7 @@ body {
   border-radius: 100px;
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-top: 20px; }
 
@@ -658,7 +659,7 @@ body {
   border-radius: 100px;
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-top: 20px; }
 

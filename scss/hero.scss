@@ -51,7 +51,7 @@
     border-radius: 100px;
     color: white;
     font-family: $fuente;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: bold;
     margin-top: 20px;
 }
@@ -70,6 +70,7 @@
     bottom: 20px;
     right: 50%;
     left: 50%;
+    cursor: pointer;
 }
 
 /* MENU */

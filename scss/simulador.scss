@@ -97,9 +97,9 @@
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
-  }
+}
 
-  .simulador__range::-webkit-slider-thumb {
+.simulador__range::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 25px;
@@ -108,13 +108,13 @@
     border: solid 4px $violetaClaro;
     background: white;
     cursor: pointer;
-  }
+}
 
-  .simulador__checkbox {
-      height: 30px;
-      width: 30px;
-  }
-  
+.simulador__checkbox {
+    height: 30px;
+    width: 30px;
+}
+
 /* BUTTON */
 
 .simulador__btn {
@@ -124,7 +124,7 @@
     border-radius: 100px;
     color: white;
     font-family: $fuente;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: bold;
     margin-top: 20px;
 }
