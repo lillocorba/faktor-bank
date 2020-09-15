@@ -11,6 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -89,18 +90,18 @@
                 <div class="col-sm-12 col-md-5 col-lg-5 simulador__col2">
                     <div>
                         <p class="simulador__p">¿Cuánto dinero necesitas?</p>
-                        <input type="range" min="1" max="100" value="50" class="simulador__range" id="">
-                        <input type="" name="" id="" class="simulador__input">
+                        <input type="range" min="1" max="100" value="50" class="simulador__range" id="rangeInput" oninput="amount.value=rangeInput.value">
+                        <input type="text" value="50" name="" id="amount" class="simulador__input" oninput="rangeInput.value=amount.value">
                     </div>
                     <div>
                         <p class="simulador__p">¿En cuántos meses querés devolverlo?</p>
-                        <input type="range" min="1" max="100" value="50" class="simulador__range" id="">
-                        <input type="" name="" id="" class="simulador__input">
+                        <input type="range" min="1" max="72" value="12" class="simulador__range" id="rangeInput2" oninput="meses.value=rangeInput2.value">
+                        <input type="" name="" value="12" id="meses" class="simulador__input" oninput="rangeInput2.value=meses.value">
                     </div>
                     <div>
                         <p class="simulador__p">¿Sos cliente de Faktor Bank?</p>
                         <label class="switch">
-                            <input type="checkbox">
+                            <input type="checkbox" class="simulador__checkbox">
                             <span class="slider round"></span>
                         </label>
                     </div>
@@ -170,6 +171,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 </body>
 
 </html>

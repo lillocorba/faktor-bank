@@ -85,3 +85,87 @@
     font-weight: bold;
     margin-top: 20px;
 }
+
+/* IPAD */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .contacto__btn {
+        background-color: $violetaClaro;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 100px;
+        color: white;
+        font-family: $fuente;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    .contacto__btn:hover {
+        background-color: $violetaOscuro;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 100px;
+        color: white;
+        font-family: $fuente;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+}
+
+/* COMPUTADORA CHICA */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .contacto__btn {
+        background-color: $violetaClaro;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 100px;
+        color: white;
+        font-family: $fuente;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    .contacto__btn:hover {
+        background-color: $violetaOscuro;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 100px;
+        color: white;
+        font-family: $fuente;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+} 
+
+/* COMPUTADORA GRANDE */
+
+@media (min-width: 1200px) {
+    .contacto__btn {
+        background-color: $violetaClaro;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 100px;
+        color: white;
+        font-family: $fuente;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    .contacto__btn:hover {
+        background-color: $violetaOscuro;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 100px;
+        color: white;
+        font-family: $fuente;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+}

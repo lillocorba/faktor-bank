@@ -118,7 +118,27 @@ body {
     text-align: center;
     margin-top: 20px; }
   .hero__row {
-    padding-bottom: 100px; } }
+    padding-bottom: 100px; }
+  .hero__btn {
+    background-color: #604AD8;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 20px; }
+  .hero__btn:hover {
+    background-color: #343447;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 20px; } }
 
 /* COMPUTADORA CHICA */
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -148,7 +168,27 @@ body {
     margin-top: 50px;
     margin-bottom: 75px; }
   .nav-link {
-    border: none; } }
+    border: none; }
+  .hero__btn {
+    background-color: #604AD8;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 20px; }
+  .hero__btn:hover {
+    background-color: #343447;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 20px; } }
 
 /* COMPUTADORA GRANDE */
 @media (min-width: 1200px) {
@@ -178,7 +218,27 @@ body {
     margin-top: 50px;
     margin-bottom: 75px; }
   .nav-link {
-    border: none; } }
+    border: none; }
+  .hero__btn {
+    background-color: #604AD8;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 20px; }
+  .hero__btn:hover {
+    background-color: #343447;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 20px; } }
 
 /* COLORES */
 /* FUENTE */
@@ -212,6 +272,48 @@ body {
   font-size: 0.8rem;
   text-align: center;
   margin-top: 30px; }
+
+/* MEDIA QUERIES */
+/* IPAD */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .nosotros__p {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 30px; } }
+
+/* COMPUTADORA CHICA */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .nosotros__p {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 30px; }
+  .nosotros__h3 {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 30px; } }
+
+/* COMPUTADORA GRANDE */
+@media (min-width: 1200px) {
+  .nosotros__p {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 30px; }
+  .nosotros__h3 {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 30px; } }
 
 /* COLORES */
 /* FUENTE */
@@ -280,7 +382,41 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px; }
+  margin-top: 20px;
+  border: solid 1px rgba(96, 74, 216, 0.5);
+  border-radius: 100px;
+  width: 50%;
+  padding-left: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+  color: #604AD8; }
+
+.simulador__range {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 5px;
+  border-radius: 100px;
+  background: #E5E7E9;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s; }
+
+.simulador__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: solid 4px #604AD8;
+  background: white;
+  cursor: pointer; }
+
+.simulador__checkbox {
+  height: 30px;
+  width: 30px; }
 
 /* BUTTON */
 .simulador__btn {
@@ -320,6 +456,26 @@ body {
     font-size: 1rem;
     margin-bottom: 0px; }
   .simulador__col4 {
+    margin-top: 30px; }
+  .simulador__btn {
+    background-color: #604AD8;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 30px; }
+  .simulador__btn:hover {
+    background-color: #343447;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
     margin-top: 30px; } }
 
 /* COMPUTADORA CHICA */
@@ -353,6 +509,26 @@ body {
     color: #6A7686;
     font-size: 1rem;
     text-align: center;
+    margin-top: 30px; }
+  .simulador__btn {
+    background-color: #604AD8;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 30px; }
+  .simulador__btn:hover {
+    background-color: #343447;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
     margin-top: 30px; } }
 
 /* COMPUTADORA GRANDE */
@@ -386,6 +562,26 @@ body {
     color: #6A7686;
     font-size: 1rem;
     text-align: center;
+    margin-top: 30px; }
+  .simulador__btn {
+    background-color: #604AD8;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 30px; }
+  .simulador__btn:hover {
+    background-color: #343447;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
     margin-top: 30px; } }
 
 /* COLORES */
@@ -465,6 +661,75 @@ body {
   font-size: 0.8rem;
   font-weight: bold;
   margin-top: 20px; }
+
+/* IPAD */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .contacto__btn {
+    background-color: #604AD8;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 30px; }
+  .contacto__btn:hover {
+    background-color: #343447;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 30px; } }
+
+/* COMPUTADORA CHICA */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .contacto__btn {
+    background-color: #604AD8;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 30px; }
+  .contacto__btn:hover {
+    background-color: #343447;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 30px; } }
+
+/* COMPUTADORA GRANDE */
+@media (min-width: 1200px) {
+  .contacto__btn {
+    background-color: #604AD8;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 30px; }
+  .contacto__btn:hover {
+    background-color: #343447;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 30px; } }
 
 /* COLORES */
 /* FUENTE */

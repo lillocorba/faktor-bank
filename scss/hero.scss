@@ -143,6 +143,30 @@
     .hero__row {
         padding-bottom: 100px;
     }
+
+    .hero__btn {
+        background-color: $violetaClaro;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 100px;
+        color: white;
+        font-family: $fuente;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .hero__btn:hover {
+        background-color: $violetaOscuro;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 100px;
+        color: white;
+        font-family: $fuente;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-top: 20px;
+    }
 }
 
 /* COMPUTADORA CHICA */
@@ -190,6 +214,30 @@
     .nav-link {
         border: none;
     }
+
+    .hero__btn {
+        background-color: $violetaClaro;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 100px;
+        color: white;
+        font-family: $fuente;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .hero__btn:hover {
+        background-color: $violetaOscuro;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 100px;
+        color: white;
+        font-family: $fuente;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-top: 20px;
+    }
 }
 
 /* COMPUTADORA GRANDE */
@@ -236,5 +284,29 @@
 
     .nav-link {
         border: none;
+    }
+
+    .hero__btn {
+        background-color: $violetaClaro;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 100px;
+        color: white;
+        font-family: $fuente;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .hero__btn:hover {
+        background-color: $violetaOscuro;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 100px;
+        color: white;
+        font-family: $fuente;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-top: 20px;
     }
 }

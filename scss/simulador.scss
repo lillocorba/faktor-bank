@@ -76,8 +76,45 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+    border: solid 1px rgba($color: $violetaClaro, $alpha: 0.5);
+    border-radius: 100px;
+    width: 50%;
+    padding-left: 10px;
+    font-family: $fuente;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    color: $violetaClaro;
 }
 
+.simulador__range {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 5px;
+    border-radius: 100px;  
+    background: #E5E7E9;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+
+  .simulador__range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    border: solid 4px $violetaClaro;
+    background: white;
+    cursor: pointer;
+  }
+
+  .simulador__checkbox {
+      height: 30px;
+      width: 30px;
+  }
+  
 /* BUTTON */
 
 .simulador__btn {
@@ -132,6 +169,30 @@
     .simulador__col4 {
         margin-top: 30px;
     }
+
+    .simulador__btn {
+        background-color: $violetaClaro;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 100px;
+        color: white;
+        font-family: $fuente;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    .simulador__btn:hover {
+        background-color: $violetaOscuro;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 100px;
+        color: white;
+        font-family: $fuente;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-top: 30px;
+    }
 }
 
 /* COMPUTADORA CHICA */
@@ -180,6 +241,30 @@
         text-align: center;
         margin-top: 30px;
     } 
+
+    .simulador__btn {
+        background-color: $violetaClaro;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 100px;
+        color: white;
+        font-family: $fuente;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    .simulador__btn:hover {
+        background-color: $violetaOscuro;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 100px;
+        color: white;
+        font-family: $fuente;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-top: 30px;
+    }
 }
 
 /* COMPUTADORA GRANDE */
@@ -227,5 +312,29 @@
         font-size: 1rem;
         text-align: center;
         margin-top: 30px;
-    } 
+    }
+
+    .simulador__btn {
+        background-color: $violetaClaro;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 100px;
+        color: white;
+        font-family: $fuente;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+    .simulador__btn:hover {
+        background-color: $violetaOscuro;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-radius: 100px;
+        color: white;
+        font-family: $fuente;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-top: 30px;
+    }
 }
