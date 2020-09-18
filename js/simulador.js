@@ -47,7 +47,7 @@ function simuladorPrestamo() {
   var comision = (totalPrestamo * 0.3).toFixed(2)
 
   resultadoCuota.innerHTML = "$" + cuotaMensual
-  resultadoInteres.innerHTML = "Interes: " + "$" + totalInteres
+  resultadoInteres.innerHTML = "Intereses: " + "$" + totalInteres
   resultadoComision.innerHTML = "Comision: " + "$" + comision
 }
 
