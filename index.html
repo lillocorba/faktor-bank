@@ -90,22 +90,25 @@
                 <div class="col-sm-12 col-md-5 col-lg-5 simulador__col2">
                     <div>
                         <p class="simulador__p">¿Cuánto dinero necesitas?</p>
-                        <input type="range" min="1000" max="100000" value="5000" class="simulador__range"
-                            id="rangeInput" oninput="amount.value=rangeInput.value">
-                        <input type="text" value="5000" name="" id="amount" class="simulador__input"
-                            oninput="rangeInput.value=amount.value">
+                        <input type="range" min="1000" max="100000" value="10000" class="simulador__range"
+                            id="rangeMonto" oninput="inputMonto.value=rangeMonto.value">
+                            
+                        <input type="text" name="" id="inputMonto" value="10000" class="simulador__input"
+                        oninput="rangeMonto.value=inputMonto.value">
+                        
                     </div>
                     <div>
                         <p class="simulador__p">¿En cuántos meses querés devolverlo?</p>
-                        <input type="range" min="1" max="72" value="12" class="simulador__range" id="rangeInput2"
-                            oninput="meses.value=rangeInput2.value">
-                        <input type="" name="" value="12" id="meses" class="simulador__input"
-                            oninput="rangeInput2.value=meses.value">
+                        <input type="range" min="1" max="72" value="12" class="simulador__range" id="rangeMeses" oninput="inputMeses.value=rangeMeses.value">
+                        
+                        <input type="" name="" id="inputMeses" class="simulador__input" value="12"
+                        oninput="rangeMeses.value=meses.value">
+                            
                     </div>
                     <div>
                         <p class="simulador__p">¿Sos cliente de Faktor Bank?</p>
                         <label class="switch">
-                            <input type="checkbox" class="simulador__checkbox">
+                            <input type="checkbox" class="simulador__checkbox" id="checkboxCliente">
                             <span class="slider round"></span>
                         </label>
                     </div>
@@ -113,13 +116,13 @@
                 <div class="col-sm-12 col-md-5 col-lg-5 simulador__col3">
                     <div>
                         <p class="simulador__p--resultado">Tu cuota mensual:</p>
-                        <h4 class="simulador__h4--resultado">$1159</h4>
-                        <p class="simulador__p--resultado--comision">Comisión: $1338</p>
-                        <p class="simulador__p--resultado">Intereses: 20%</p>
+                        <h4 class="simulador__h4--resultado" id="resultadoCuota"></h4>
+                        <p class="simulador__p--resultado--comision" id="resultadoComision"></p>
+                        <p class="simulador__p--resultado" id="resultadoInteres"></p>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-12 simulador__col4">
-                    <button class="simulador__btn">Solicitar Préstamo</button>
+                    <button class="simulador__btn" id="btnActualizar" onclick="simuladorPrestamo()">Actualizar</button>
                 </div>
             </div>
         </div>
