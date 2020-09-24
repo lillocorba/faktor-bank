@@ -5,6 +5,8 @@
 .simulador {
     padding-bottom: 100px;
     padding-top: 100px;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .simulador__col2 {
@@ -25,6 +27,21 @@
 .simulador__col4 {
     display: flex;
     justify-content: center;
+}
+
+/* SHAPES */
+
+.shape__hero--simulador { 
+    background-color: $violetaClaro;
+    width: 500px;
+    height: 500px;
+    border-radius: 300px;
+    position: absolute;
+    top: 50;
+    right: 0;
+    z-index: -1;
+    opacity: 0.05;
+    transform: rotate(-35deg);
 }
 
 /* TEXTO */

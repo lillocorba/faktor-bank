@@ -10,6 +10,21 @@
     text-align: center;
 }
 
+/* SHAPES */
+
+.shape__hero--contacto { 
+    background-color: $violetaClaro;
+    width: 800px;
+    height: 500px;
+    border-radius: 300px;
+    position: absolute;
+    top: 50;
+    left: 0;
+    z-index: -1;
+    opacity: 0.05;
+    transform: rotate(-35deg);
+}
+
 /* TEXTO */
 
 .contacto__h4 {

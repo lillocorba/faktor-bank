@@ -42,6 +42,19 @@ body {
   text-align: center;
   margin-top: 20px; }
 
+/* SHAPES */
+.shape__hero {
+  background-color: #604AD8;
+  width: 800px;
+  height: 500px;
+  border-radius: 500px;
+  position: absolute;
+  top: 0;
+  right: 800;
+  z-index: -1;
+  opacity: 0.05;
+  transform: rotate(55deg); }
+
 /* BOTONES */
 .hero__btn {
   background-color: #604AD8;
@@ -324,7 +337,9 @@ body {
 /* CONTENEDORES */
 .simulador {
   padding-bottom: 100px;
-  padding-top: 100px; }
+  padding-top: 100px;
+  position: relative;
+  overflow-x: hidden; }
 
 .simulador__col2 {
   text-align: center; }
@@ -342,6 +357,19 @@ body {
 .simulador__col4 {
   display: flex;
   justify-content: center; }
+
+/* SHAPES */
+.shape__hero--simulador {
+  background-color: #604AD8;
+  width: 500px;
+  height: 500px;
+  border-radius: 300px;
+  position: absolute;
+  top: 50;
+  right: 0;
+  z-index: -1;
+  opacity: 0.05;
+  transform: rotate(-35deg); }
 
 /* TEXTO */
 .simulador__h4 {
@@ -596,6 +624,19 @@ body {
 
 .contacto__col {
   text-align: center; }
+
+/* SHAPES */
+.shape__hero--contacto {
+  background-color: #604AD8;
+  width: 800px;
+  height: 500px;
+  border-radius: 300px;
+  position: absolute;
+  top: 50;
+  left: 0;
+  z-index: -1;
+  opacity: 0.05;
+  transform: rotate(-35deg); }
 
 /* TEXTO */
 .contacto__h4 {
