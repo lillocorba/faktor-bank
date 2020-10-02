@@ -66,3 +66,16 @@ function simuladorPrestamo() {
 }
 
 simuladorPrestamo()
+
+var ventanaPrestamoOtorgado = document.querySelector(".prestamo__otorgado")
+var botonPrestamoOtorgado = document.querySelector("#btnPrestamo")
+var botonGracias = document.querySelector("#btnPrestamoGracias")
+
+botonPrestamoOtorgado.addEventListener("click", function ortorgarPrestamo() {
+  ventanaPrestamoOtorgado.classList.add("prestamo__otorgado--active")
+})
+
+botonGracias.addEventListener("click", function cerrarPrestamo() {
+  ventanaPrestamoOtorgado.classList.remove("prestamo__otorgado--active")
+})
+

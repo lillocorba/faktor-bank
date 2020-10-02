@@ -594,7 +594,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white; }
+  color: white;
+  opacity: 0;
+  transform: translate(-100%);
+  transition: all 1s ease-in-out; }
+
+.prestamo__otorgado.prestamo__otorgado--active {
+  opacity: 1;
+  transform: translate(0%); }
 
 .prestamo__otorgado__h2 {
   font-family: "Montserrat", sans-serif;
@@ -621,6 +628,9 @@ body {
   font-size: 1rem;
   font-weight: bold;
   margin-top: 20px; }
+
+.prestamo__otorgado__like {
+  margin-bottom: 20px; }
 
 /* MEDIA QUERIES */
 /* IPAD */
