@@ -6,9 +6,6 @@ var resultadoCuota = document.getElementById("resultadoCuota")
 var resultadoComision = document.getElementById("resultadoComision")
 var resultadoInteres = document.getElementById("resultadoInteres")
 var resultadoCliente = document.getElementById("checkboxCliente").checked
-var boton = document.getElementById("btnActualizar")
-
-boton.addEventListener("click", simuladorPrestamo)
 
 function simuladorPrestamo() {
 
@@ -65,7 +62,7 @@ function simuladorPrestamo() {
 
   let json = JSON.stringify(resultadoPrestamoTotal)
 
-  localStorage.setItem('Último cálculo: ', json)
+  localStorage.setItem('ultimoCalculo', json)
 }
 
 simuladorPrestamo()

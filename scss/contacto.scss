@@ -32,6 +32,14 @@
     color: $grisClaro;
     font-size: 1rem;
     text-align: center;
+    transform: translate(0px, 100px);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.contacto__h4.contacto__h4--active {
+    transform: translate(0%);
+    opacity: 1;
 }
 
 .contacto__h3 {
@@ -42,9 +50,28 @@
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    transform: translate(0px, 100px);
+    opacity: 0;
+    transition: all 1s ease-in-out 1s;
+}
+
+.contacto__h3.contacto__h3--active {
+    transform: translate(0%);
+    opacity: 1;
 }
 
 /* FORM */
+
+.contacto__form {
+    transform: translate(0px, 100px);
+    opacity: 0;
+    transition: all 1s ease-in-out 1.5s;
+}
+
+.contacto__form.contacto__form--active {
+    transform: translate(0%);
+    opacity: 1;
+}
 
 .contacto__input {
     width: 100%;

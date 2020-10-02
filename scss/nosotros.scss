@@ -15,6 +15,14 @@
     color: white;
     font-size: 1rem;
     text-align: center;
+    transform: translate(0px, 200px);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.nosotros__h4.nosotros__h4--active {
+    transform: translate(0px, 0%);
+    opacity: 1;
 }
 
 .nosotros__h3 {
@@ -24,6 +32,14 @@
     font-size: 1.6rem;
     text-align: center;
     margin-top: 30px;
+    transform: translate(0px, 200px);
+    opacity: 0;
+    transition: all 1s ease-in-out 0.5s;
+}
+
+.nosotros__h3.nosotros__h3--active {
+    transform: translate(0px, 0%);
+    opacity: 1;
 }
 
 .nosotros__p {
@@ -32,6 +48,14 @@
     font-size: 0.8rem;
     text-align: center;
     margin-top: 30px;
+    transform: translate(0px, 200px);
+    opacity: 0;
+    transition: all 1s ease-in-out 1s;
+}
+
+.nosotros__p.nosotros__p--active {
+    transform: translate(0px, 0%);
+    opacity: 1;
 }
 
 /* MEDIA QUERIES */
