@@ -1,6 +1,7 @@
 @import "variables.scss", "hero.scss", "nosotros.scss", "simulador.scss", "contacto.scss", "footer.scss";
 
-html {
+html, body {
+    position: relative;
     scroll-behavior: smooth;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }

@@ -87,7 +87,6 @@
 
 .hero__phone {
     height: 300px;
-    margin-left: 50px;
     width: auto;
     margin-top: 50px;
     margin-bottom: 75px;
@@ -95,7 +94,7 @@
 
 .hero__phone.hero__phone--active {
     animation-name: iphone;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     transition: all 1s ease-in-out;
 }
 
