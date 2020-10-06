@@ -521,6 +521,12 @@ body {
   font-size: 1rem;
   margin-bottom: 0px; }
 
+.simulador__p--prestamoTotal {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold; }
+
 /* INPUT */
 .simulador__input {
   display: block;

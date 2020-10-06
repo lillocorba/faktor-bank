@@ -1,5 +1,6 @@
 /* ANIMACIONES HERO */
 
+
 $(document).ready(function() {
 
       $("#heroPhone").addClass('hero__phone--active')

@@ -6,6 +6,7 @@ var resultadoCuota = document.getElementById("resultadoCuota")
 var resultadoComision = document.getElementById("resultadoComision")
 var resultadoInteres = document.getElementById("resultadoInteres")
 var resultadoCliente = document.getElementById("checkboxCliente").checked
+var resultadoMontoTotal = document.getElementById("prestamoTotal")
 
 function simuladorPrestamo() {
 
@@ -17,6 +18,8 @@ function simuladorPrestamo() {
   let resultadoComision = document.getElementById("resultadoComision")
   let resultadoInteres = document.getElementById("resultadoInteres")
   let resultadoCliente = document.getElementById("checkboxCliente").checked
+  let resultadoMontoTotal = document.getElementById("prestamoTotal")
+  let montoTotalPrestamo = document.querySelector("#prestamoMontoTotalOtorgado")
 
   /* Interes especial por ser cliente */
 
@@ -51,6 +54,8 @@ function simuladorPrestamo() {
   resultadoCuota.innerHTML = "$" + cuotaMensual
   resultadoInteres.innerHTML = "Intereses: " + "$" + totalInteres
   resultadoComision.innerHTML = "Comision: " + "$" + comision
+  resultadoMontoTotal.innerHTML = "Monto Total: " + "$" + totalPrestamo
+  montoTotalPrestamo.innerHTML = "$" + totalPrestamo
 
   /* Pasar los resultados a JSON y guardarlos en Local Storage */
 
@@ -67,9 +72,12 @@ function simuladorPrestamo() {
 
 simuladorPrestamo()
 
+/* VENTANA PRESTAMO OTORGADO */
+
 var ventanaPrestamoOtorgado = document.querySelector(".prestamo__otorgado")
 var botonPrestamoOtorgado = document.querySelector("#btnPrestamo")
 var botonGracias = document.querySelector("#btnPrestamoGracias")
+var montoTotalPrestamo = document.querySelector("#prestamoMontoTotalOtorgado")
 
 botonPrestamoOtorgado.addEventListener("click", function ortorgarPrestamo() {
   ventanaPrestamoOtorgado.classList.add("prestamo__otorgado--active")
