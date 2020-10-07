@@ -63,7 +63,27 @@ body {
   right: 800;
   z-index: -1;
   opacity: 0.05;
-  transform: rotate(55deg); }
+  transform: rotate(-55deg); }
+
+.shape__hero--active {
+  animation-name: shapeHero;
+  animation-duration: 2s;
+  animation-timing-function: initial;
+  transform: rotate(55deg);
+  border-radius: 300px;
+  opacity: 0.07; }
+
+@keyframes shapeHero {
+  0% {
+    opacity: 0;
+    transform: rotate(-55deg);
+    border-radius: 0px; }
+  50% {
+    opacity: 0.07; }
+  100% {
+    opacity: 0.07;
+    transform: rotate(55deg);
+    border-radius: 300px; } }
 
 /* BOTONES */
 .hero__btn {
@@ -309,7 +329,10 @@ body {
 .nosotros {
   padding-bottom: 100px;
   padding-top: 100px;
-  background-color: #604AD8; }
+  background-color: #604AD8;
+  background-image: url(../imagenes/hero-phone.png);
+  background-attachment: fixed;
+  background-blend-mode: multiply; }
 
 /* TEXTO */
 .nosotros__h4 {
@@ -464,13 +487,33 @@ body {
   background-color: #604AD8;
   width: 500px;
   height: 500px;
-  border-radius: 300px;
+  border-radius: 50px;
   position: absolute;
   top: 50;
-  right: 0;
+  left: 0;
   z-index: -1;
-  opacity: 0.05;
-  transform: rotate(-35deg); }
+  opacity: 0;
+  transition: all 1s ease-in-out; }
+
+.shape__hero--simulador--active {
+  animation-name: shapeSimulador;
+  animation-duration: 2s;
+  animation-timing-function: initial;
+  transform: translate(1500px);
+  border-radius: 300px;
+  opacity: 0.07; }
+
+@keyframes shapeSimulador {
+  0% {
+    transform: translate(-1000px);
+    opacity: 0;
+    border-radius: 0px; }
+  50% {
+    opacity: 0.07; }
+  100% {
+    transform: translate(1500px);
+    opacity: 0.07;
+    border-radius: 300px; } }
 
 /* TEXTO */
 .simulador__h4 {
@@ -815,8 +858,28 @@ body {
   top: 50;
   left: 0;
   z-index: -1;
-  opacity: 0.05;
-  transform: rotate(-35deg); }
+  opacity: 0;
+  transition: all 1s ease-in-out; }
+
+.shape__hero--contacto--active {
+  animation-name: shapeContacto;
+  animation-duration: 2s;
+  animation-timing-function: initial;
+  transform: rotate(-35deg);
+  border-radius: 300px;
+  opacity: 0.07; }
+
+@keyframes shapeContacto {
+  0% {
+    opacity: 0;
+    transform: rotate(35deg);
+    border-radius: 0px; }
+  50% {
+    opacity: 0.07; }
+  100% {
+    opacity: 0.07;
+    transform: rotate(-35deg);
+    border-radius: 300px; } }
 
 /* TEXTO */
 .contacto__h4 {

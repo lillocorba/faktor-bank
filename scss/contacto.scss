@@ -21,8 +21,35 @@
     top: 50;
     left: 0;
     z-index: -1;
-    opacity: 0.05;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.shape__hero--contacto--active {
+    animation-name: shapeContacto;
+    animation-duration: 2s;
+    animation-timing-function: initial;
     transform: rotate(-35deg);
+    border-radius: 300px;
+    opacity: 0.07;
+}
+
+@keyframes shapeContacto {
+    0% {
+        opacity: 0;
+        transform: rotate(35deg);
+        border-radius: 0px;
+    }
+
+    50% {
+        opacity: 0.07;
+    }
+
+    100% {
+        opacity: 0.07;
+        transform: rotate(-35deg);
+        border-radius: 300px;
+    }
 }
 
 /* TEXTO */

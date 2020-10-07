@@ -6,7 +6,7 @@ $(document).ready(function() {
       $("#heroPhone").addClass('hero__phone--active')
       $(".hero__col1").addClass('hero__col1--active')
       $(".hero__arrows").addClass('hero__arrows--active')
-
+      $(".shape__hero").addClass('shape__hero--active')
 })
 
 /* ANIMACIONES SIMULADOR */
@@ -20,6 +20,7 @@ $(document).scroll(function scrollSimulador(){
       $(".simulador__colRange1").addClass('simulador__colRange1--active')
       $(".simulador__colRange2").addClass('simulador__colRange2--active')
       $(".simulador__colRange3").addClass('simulador__colRange3--active')
+      $(".shape__hero--simulador").addClass('shape__hero--simulador--active')
 
    }
 })
@@ -45,6 +46,7 @@ $(document).scroll(function scrollContacto(){
       $(".contacto__h4").addClass('contacto__h4--active')
       $(".contacto__h3").addClass('contacto__h3--active')
       $(".contacto__form").addClass('contacto__form--active')
+      $(".shape__hero--contacto").addClass('shape__hero--contacto--active')
 
    }
 })
@@ -53,7 +55,7 @@ $(document).scroll(function scrollContacto(){
 
 $(document).scroll(function scrollNosotros(){
 
-   if (window.scrollY > ($(".nosotros__h4").offset().top)-(window.innerHeight/1.1)) {
+   if (window.scrollY > ($(".nosotros__h4").offset().top)-(window.innerHeight)) {
 
       $(".nosotros__h4").addClass('nosotros__h4--active')
       $(".nosotros__h3").addClass('nosotros__h3--active')
