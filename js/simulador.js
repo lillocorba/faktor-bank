@@ -7,6 +7,31 @@ var resultadoComision = document.getElementById("resultadoComision")
 var resultadoInteres = document.getElementById("resultadoInteres")
 var resultadoCliente = document.getElementById("checkboxCliente").checked
 var resultadoMontoTotal = document.getElementById("prestamoTotal")
+var ultimaCotizacion = localStorage.ultimoCalculo ? JSON.parse(localStorage.ultimoCalculo) : null;
+
+/* ULTIMA COTIZACIÓN LOCAL STORAGE EN PANTALLA */
+
+document.addEventListener('DOMContentLoaded', cotizacionCliente)
+
+function cotizacionCliente () {
+  resultadoCuota.textContent = "$" + ultimaCotizacion.cuota
+  resultadoInteres.textContent = "Intereses: " + "$" + ultimaCotizacion.interes
+  resultadoComision.textContent = "Comision: " + "$" + ultimaCotizacion.comision
+  resultadoMontoTotal.textContent = "Monto Total: " + "$" + ultimaCotizacion.montoTotal
+  monto = ultimaCotizacion.valueMonto // No estaría funcionando
+  meses = ultimaCotizacion.valueMeses // No estaría funcionando
+}
+
+cotizacionCliente()
+
+/* OBJETO RESULTADOS PARCIALES */
+
+var resultadosParciales = {
+    montoMensual: 0,
+    interes: 0,
+    comision: 0,
+    prestamoTotal: 0
+}
 
 function simuladorPrestamo() {
 
@@ -36,18 +61,22 @@ function simuladorPrestamo() {
 
   let x = Math.pow(1 + calculoInteres, meses)
   let cuotaMensual = ((montoSolicitado * x * calculoInteres) / (x - 1)).toFixed(2)
+  resultadosParciales.montoMensual = cuotaMensual
 
   /* Calculo monto total préstamo */
 
   let totalPrestamo = (cuotaMensual * meses).toFixed(2)
+  resultadosParciales.prestamoTotal = totalPrestamo
 
   /* Calculo total intereses */
 
   let totalInteres = (totalPrestamo - montoSolicitado).toFixed(2)
-
+  resultadosParciales.interes = totalInteres
+  
   /* Calculo comision */
 
   let comision = (totalPrestamo * 0.3).toFixed(2)
+  resultadosParciales.comision = comision
 
   /* Trasladar los resultados a Pantalla */
 
@@ -60,9 +89,12 @@ function simuladorPrestamo() {
   /* Pasar los resultados a JSON y guardarlos en Local Storage */
 
   let resultadoPrestamoTotal = {
-    Cuota: cuotaMensual,
-    Comision: comision,
-    Interés: totalInteres
+    cuota: cuotaMensual,
+    comision: comision,
+    interes: totalInteres,
+    montoTotal: totalPrestamo,
+    valueMonto: monto,
+    valueMeses: meses
   }
 
   let json = JSON.stringify(resultadoPrestamoTotal)
