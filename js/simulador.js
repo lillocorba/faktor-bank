@@ -110,12 +110,21 @@ var ventanaPrestamoOtorgado = document.querySelector(".prestamo__otorgado")
 var botonPrestamoOtorgado = document.querySelector("#btnPrestamo")
 var botonGracias = document.querySelector("#btnPrestamoGracias")
 var montoTotalPrestamo = document.querySelector("#prestamoMontoTotalOtorgado")
+var clientePrestamo = document.querySelector("#clientePrestamoOtorgado")
 
 botonPrestamoOtorgado.addEventListener("click", function ortorgarPrestamo() {
   ventanaPrestamoOtorgado.classList.add("prestamo__otorgado--active")
+
+  /* AJAX */
+
+  $.ajax({
+    url: "clientes.json",
+    success: function (data) {
+      clientePrestamo.innerHTML = data[Math.floor(Math.random() * data.length)].first_name
+    }
+  });
 })
 
 botonGracias.addEventListener("click", function cerrarPrestamo() {
   ventanaPrestamoOtorgado.classList.remove("prestamo__otorgado--active")
 })
-
