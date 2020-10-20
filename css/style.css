@@ -455,10 +455,19 @@ body {
   display: flex;
   justify-content: center; }
 
-.simulador__colRange1 {
+.simulador__colInputNombre {
   transform: scale(0);
   opacity: 0;
   transition: all 1s ease-in-out; }
+
+.simulador__colInputNombre.simulador__colInputNombre--active {
+  transform: scale(1);
+  opacity: 1; }
+
+.simulador__colRange1 {
+  transform: scale(0);
+  opacity: 0;
+  transition: all 1s ease-in-out 1.5s; }
 
 .simulador__colRange1.simulador__colRange1--active {
   transform: scale(1);
@@ -467,7 +476,7 @@ body {
 .simulador__colRange2 {
   transform: scale(0);
   opacity: 0;
-  transition: all 1s ease-in-out 1.5s; }
+  transition: all 1s ease-in-out 2s; }
 
 .simulador__colRange2.simulador__colRange2--active {
   transform: scale(1);
@@ -476,7 +485,7 @@ body {
 .simulador__colRange3 {
   transform: scale(0);
   opacity: 0;
-  transition: all 1s ease-in-out 2s; }
+  transition: all 1s ease-in-out 2.5s; }
 
 .simulador__colRange3.simulador__colRange3--active {
   transform: scale(1);
