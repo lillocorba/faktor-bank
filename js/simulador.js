@@ -14,14 +14,19 @@ var ultimaCotizacion = localStorage.ultimoCalculo ? JSON.parse(localStorage.ulti
 
 document.addEventListener('DOMContentLoaded', cotizacionCliente)
 
-function cotizacionCliente() {
-  resultadoCuota.textContent = "$" + ultimaCotizacion.cuota
-  resultadoInteres.textContent = "Intereses: " + "$" + ultimaCotizacion.interes
-  resultadoComision.textContent = "Comision: " + "$" + ultimaCotizacion.comision
-  resultadoMontoTotal.textContent = "Monto Total: " + "$" + ultimaCotizacion.montoTotal
-}
+ function cotizacionCliente() {
 
-cotizacionCliente()
+  if (ultimaCotizacion) {
+    resultadoCuota.textContent = "$" + ultimaCotizacion.cuota
+    resultadoInteres.textContent = "Intereses: " + "$" + ultimaCotizacion.interes
+    resultadoComision.textContent = "Comision: " + "$" + ultimaCotizacion.comision
+    resultadoMontoTotal.textContent = "Monto Total: " + "$" + ultimaCotizacion.montoTotal
+  } else {
+    return
+  }
+ }
+
+ cotizacionCliente()
 
 /* OBJETO RESULTADOS PARCIALES */
 
@@ -95,8 +100,6 @@ function simuladorPrestamo() {
     comision: comision,
     interes: totalInteres,
     montoTotal: totalPrestamo,
-    // valueMonto: monto,
-    // valueMeses: meses
   }
 
   let json = JSON.stringify(resultadoPrestamoTotal)
